@@ -26,6 +26,9 @@ tell application "iTerm" to activate
     'textual': """
 tell application "Textual" to activate
     """,
+    'activity': """
+tell application "Activity Monitor" to activate
+    """,
     'mute': """
 set volumeSettings to get volume settings
 if output muted of volumeSettings is false then
