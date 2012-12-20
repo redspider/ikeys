@@ -17,7 +17,7 @@ git clone https://github.com/redspider/ikeys.git .
 php install -r requirements.txt
 ```
 
-Now it's all installed, all you have to do to run it up is (in the same dir):
+Now it's all installed, all you have to do to run it up is (in the same dir)
 
 ```
 python app.py
