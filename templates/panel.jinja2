@@ -9,7 +9,7 @@
             $(function () {
                 $('.status').text("Ready");
 
-                $('.btn').bind('touchstart', function(e) {
+                $('.btn').bind('touchstart mousedown', function(e) {
                         e.preventDefault();
                         $('.status').text($(this).data('trigger'));
                         $.post('/trigger',{'trigger': $(this).data('trigger'), 'time': new Date()}, function (data) {$('.status').text(data); });
