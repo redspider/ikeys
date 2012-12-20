@@ -9,11 +9,10 @@ The simplest setup is as follows. Anywhere on your system where you feel comfort
 this:
 
 ```
-mkdir ikeys
+git clone https://github.com/redspider/ikeys.git ikeys
 cd ikeys
 virtualenv -p python2.7 .
 source bin/activate
-git clone https://github.com/redspider/ikeys.git .
 ```
 
 Now it's all installed, all you have to do to run it up is (in the same dir):
