@@ -1,3 +1,4 @@
+import socket
 from flask import Flask, render_template, request, make_response
 from functools import update_wrapper
 from subprocess import Popen, PIPE
@@ -67,4 +68,4 @@ def trigger():
     return "OK"
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=8181)
+    app.run(host=socket.gethostname(), port=8181)
