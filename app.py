@@ -9,7 +9,7 @@ triggers = {
 say "Bing"
     """,
     'expose': """
-tell application "System Events" to key code 101
+do shell script "/Applications/Mission\\\\ Control.app/Contents/MacOS/Mission\\\\ Control"
     """,
     'chrome': """
 tell application "Chrome" to activate
