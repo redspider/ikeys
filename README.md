@@ -14,7 +14,7 @@ git clone https://github.com/redspider/ikeys.git ikeys
 cd ikeys
 virtualenv -p python2.7 .
 source bin/activate
-php install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 Now it's all installed, all you have to do to run it up is (in the same dir)
