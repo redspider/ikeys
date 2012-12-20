@@ -20,6 +20,9 @@ tell application "PyCharm" to activate
     'sparrow': """
 tell application "Sparrow" to activate
     """,
+    'terminal': """
+tell application "iTerm" to activate
+    """,
     'textual': """
 tell application "Textual" to activate
     """,

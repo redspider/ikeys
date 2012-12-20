@@ -2,8 +2,11 @@
 @import "bootstrap/less/responsive.less";
 
 body {
-    padding-top: 20px;
+    padding-top: 30px;
 }
+
+@bodyBackground: @grayDark;
+@textColor: @white;
 
 @iconSpritePath: "/static/img/glyphicons-halflings.png";
 @iconWhiteSpritePath: "/static/img/glyphicons-halflings-white.png";
@@ -13,4 +16,31 @@ body {
     font-size: 30px;
     line-height: 34px;
     margin-bottom: 4px;
+}
+
+.base-right-group {
+    position: fixed;
+    bottom: 0px;
+    right: 20px;
+    padding: 4px;
+}
+
+.base-left-group {
+    position: fixed;
+    bottom: 0px;
+    left: 20px;
+    padding: 4px;
+}
+
+h4 {
+    color: darken(@white, 30%);
+}
+
+.status {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    padding: 2px;
+    color: @gray;
+    text-align: right;
 }

@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>OSX Remote panel</title>
-        <link rel="stylesheet" href="/static/css/app.css?3" />
+        <link rel="stylesheet" href="/static/css/app.css?9" />
         <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <script>
@@ -13,7 +13,7 @@
                         e.preventDefault();
                         $('.status').text($(this).data('trigger'));
                         $.post('/trigger',{'trigger': $(this).data('trigger'), 'time': new Date()}, function (data) {$('.status').text(data); });
-                        $('.status').text("Done");
+                        $('.status').text("Requested");
                     }
                 );
             });
@@ -23,17 +23,28 @@
         <div class="container-fluid">
             <div class="row-fluid">
                 <div class="span12">
-                    <a class="btn btn-panel" data-trigger="bell" href="#">Bell</a>
-                    <a class="btn btn-panel" data-trigger="expose" href="#">Exposé</a>
+                    <h4>Applications</h4>
                     <a class="btn btn-panel" data-trigger="chrome" href="#">Chrome</a>
                     <a class="btn btn-panel" data-trigger="pycharm" href="#">PyCharm</a>
                     <a class="btn btn-panel" data-trigger="textual" href="#">Textual</a>
                     <a class="btn btn-panel" data-trigger="sparrow" href="#">Sparrow</a>
-                    <a class="btn btn-panel" data-trigger="mute" href="#">Mute</a>
-                    <a class="btn btn-panel btn-danger" data-trigger="lock" href="#">Lock screen</a>
-                    <div class="status"></div>
+                    <a class="btn btn-panel" data-trigger="terminal" href="#">Terminal</a>
                 </div>
             </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <h4>Tools</h4>
+                    <a class="btn btn-panel" data-trigger="bell" href="#">Bell</a>
+                    <a class="btn btn-panel" data-trigger="mute" href="#">Mute</a>
+                </div>
+            </div>
+            <div class="base-left-group">
+                <a class="btn btn-panel" data-trigger="expose" href="#">Mission Control</a>
+            </div>
+            <div class="base-right-group">
+                <a class="btn btn-panel btn-danger" data-trigger="lock" href="#">Lock screen</a>
+            </div>
+            <div class="status"></div>
         </div>
     </body>
 </html>
